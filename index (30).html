@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100720">
+
+<title>Study Extraordinary | Student Profiles</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+<div class="ambient ambient-three"></div>
+
+<header class="topbar">
+  <a href="#" class="brand">
+    <span class="brand-icon">✦</span>
+    <span>
+      <strong>Study Extraordinary</strong>
+      <small>STUDENT COMMUNITY</small>
+    </span>
+  </a>
+
+  <a href="#create-profile" class="nav-button">
+    Create Profile ↗
+  </a>
+</header>
+
+<main>
+
+<section class="hero reveal">
+  <div class="hero-tag">
+    <span class="live-dot"></span>
+    WELCOME TO OUR COMMUNITY
+  </div>
+
+  <h1>
+    Every Student Has
+    <span>A Story.</span>
+  </h1>
+
+  <p>
+    Create your own student identity, add your
+    favourite profile picture and become a part
+    of Study Extraordinary.
+  </p>
+
+  <a href="#create-profile" class="hero-button">
+    Create Your Profile <span>→</span>
+  </a>
+
+  <div class="hero-decoration">✧</div>
+</section>
+
+<section class="profile-section reveal" id="create-profile">
+
+  <div class="section-heading">
+    <span class="eyebrow">YOUR IDENTITY</span>
+    <h2>Create Your Profile</h2>
+    <p>Introduce yourself to the student community.</p>
+  </div>
+
+  <div class="profile-panel">
+
+    <div class="profile-preview">
+      <div class="preview-ring">
+        <img id="image-preview"
+          src=""
+          alt="Profile preview"
+          hidden>
+
+        <div id="preview-placeholder">
+          <span>✦</span>
+          <small>YOUR PHOTO</small>
+        </div>
+      </div>
+
+      <p id="image-status">Your profile picture appears here.</p>
+    </div>
+
+    <form id="profile-form">
+
+      <label for="student-name">Student Name</label>
+      <input
+        id="student-name"
+        type="text"
+        maxlength="60"
+        placeholder="Enter your name"
+        autocomplete="name"
+        required
+      >
+
+      <label for="student-roll">Roll Number</label>
+      <input
+        id="student-roll"
+        type="text"
+        maxlength="30"
+        placeholder="Enter your roll number"
+        required
+      >
+
+      <label for="student-image">Profile Picture</label>
+      <input
+        id="student-image"
+        type="file"
+        accept="image/jpeg,image/png,image/webp"
+      >
+
+      <p class="field-note">
+        JPG, PNG or WEBP. Maximum size 5 MB.
+      </p>
+
+      <button type="submit" id="save-btn" class="primary-button">
+        ✨ Create My Profile
+      </button>
+
+      <button type="button" id="cancel-edit" class="cancel-button" hidden>
+        Cancel Editing
+      </button>
+
+      <p id="save-message" role="status"></p>
+
+    </form>
+  </div>
+</section>
+
+<section class="gallery-section reveal" id="student-gallery">
+
+  <div class="section-heading">
+    <span class="eyebrow">OUR COMMUNITY</span>
+    <h2>Meet Our Students</h2>
+    <p>Discover the people of Study Extraordinary.</p>
+  </div>
+
+  <div class="gallery-tools">
+    <input
+      id="student-search"
+      type="search"
+      placeholder="Search by student name..."
+      autocomplete="off"
+    >
+    <span id="student-count">Loading profiles...</span>
+  </div>
+
+  <p id="gallery-message" role="status">
+    Connecting to the student community...
+  </p>
+
+  <div id="student-cards" class="student-grid"></div>
+
+</section>
+
+<section class="community-section reveal">
+  <div class="community-icon">✦</div>
+  <h2>Be Part of Something Extraordinary.</h2>
+  <p>
+    Your identity. Your journey. Your community.
+    One profile at a time.
+  </p>
+  <a href="#create-profile" class="hero-button">
+    Join the Community →
+  </a>
+  <div class="creator-credit">
+  <span class="creator-star">✦</span>
+  <span class="creator-label">CREATED BY</span>
+  <h3>Pratik Roy</h3>
+  <span class="creator-line"></span>
+  <span class="creator-caption">
+    Founder & Creator · Study Extraordinary
+  </span>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">✦ Study Extraordinary</div>
+  <p>Building a community, one student at a time.</p>
+  <small>© 2026 Study Extraordinary. All rights reserved.</small>
+</footer>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
