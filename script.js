@@ -105,8 +105,15 @@ let applicationReady = false;
 
 initializeApplication();
 
-
 async function initializeApplication() {
+
+  /* Enable scroll animations immediately */
+
+  document.documentElement.classList.add(
+    "js-ready"
+  );
+
+  initializeScrollAnimations();
 
   try {
 
@@ -123,8 +130,6 @@ async function initializeApplication() {
     await loadOwnProfile();
 
     await loadStudentGallery();
-
-    initializeScrollAnimations();
 
     initialize3DEffects();
 
