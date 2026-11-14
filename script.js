@@ -9,7 +9,7 @@ import {
   db,
   auth,
   ensureAnonymousUser
-} from "./Firebase.js";
+} from "./firebase.js";
 
 import {
   collection,
